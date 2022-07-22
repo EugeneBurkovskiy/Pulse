@@ -1,0 +1,13 @@
+@import "./base/_reset";
+@import "./base/_fonts";
+@import "./blocks/_promo";
+@import "./blocks/header";
+@import "./blocks/buttons";
+
+body {
+    font-family: "MuseoModerno", sans-serif;
+}
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}

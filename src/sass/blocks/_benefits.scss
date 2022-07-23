@@ -1,0 +1,40 @@
+.benefits {
+    background-color: #f6f6f6;
+    color: #0d0d0d;
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        padding: 73px 0px 60px 0px;
+        text-transform: uppercase;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        text-align: center;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        width: 30%;
+        img {
+            width: 70px;
+            height: 70px;
+        }
+        h3 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 29px;
+            text-transform: initial;
+            margin: 35px 0px 20px 0px;
+        }
+        a {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+    }
+}

@@ -3,6 +3,7 @@
 @import "./blocks/_promo";
 @import "./blocks/header";
 @import "./blocks/buttons";
+@import "./blocks/benefits";
 
 body {
     font-family: "MuseoModerno", sans-serif;
@@ -11,3 +12,4 @@ body {
     max-width: 950px;
     margin: 0 auto;
 }
+@import "./base/_media";

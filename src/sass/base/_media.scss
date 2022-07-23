@@ -1,0 +1,86 @@
+/*-----------------------------------576px – 767px-----------------------------------*/
+@media (min-width: 576px) {
+    .container {
+        max-width: none;
+    }
+}
+
+/*-----------------------------------768px – 991px-----------------------------------*/
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+/*-----------------------------------992px – 1119px-----------------------------------*/
+@media (min-width: 992px) {
+    $scale: 1- ((1024 * 100)/1200)/100;
+    .container {
+        max-width: 950px;
+    }
+    .header {
+        &__logo {
+            width: 250px-250px * $scale;
+            img {
+                width: 100%;
+            }
+        }
+        &__offical {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px-14 * $scale;
+            color: #ffffff;
+            text-align: center;
+            span {
+                display: block;
+                font-size: 18px-14 * $scale;
+            }
+        }
+        &__phone {
+            display: block;
+            font-family: "MuseoModerno";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px-18 * $scale;
+            color: #ffffff;
+        }
+        .button {
+            font-size: 12px-12 * $scale;
+            width: 153px-153 * $scale;
+            height: 32px-32 * $scale;
+        }
+    }
+    .promo {
+        &__header {
+            font-size: 42px-42 * $scale;
+        }
+        &__subheader {
+            font-size: 24px-24 * $scale;
+        }
+        &__icons {
+            width: 424px-424 * $scale;
+        }
+        &__icon {
+            width: 106px-106 * $scale;
+            font-size: 14px-14 * $scale;
+        }
+        .button {
+            &_main {
+                width: 303px-303 * $scale;
+                height: 54px-54 * $scale;
+                font-size: 16px-16 * $scale;
+            }
+        }
+        &__link {
+            font-size: 16px-16 * $scale;
+        }
+    }
+}
+
+/*----------------------------------->1200px-----------------------------------*/
+@media (min-width: 1200px) {
+    $scale: 1-calc(((1024 * 100) / 1200) / 100);
+    .container {
+        max-width: 1200px;
+    }
+}

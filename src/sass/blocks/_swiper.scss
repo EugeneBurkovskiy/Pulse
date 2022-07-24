@@ -1,0 +1,22 @@
+.swiper {
+    margin: 150px 0px 170px 0px;
+    width: 947px;
+    height: 422px;
+    .swiper-slide {
+        img {
+            display: block;
+            height: 90%;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    .swiper-button-prev::after {
+        content: "";
+    }
+    .swiper-button-next::after {
+        content: "";
+    }
+    .swiper-pagination-bullet {
+        background-color: #c70101;
+    }
+}

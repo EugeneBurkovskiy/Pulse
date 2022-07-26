@@ -68,16 +68,22 @@
         .swiper-slide {
             img {
                 height: 60%;
-                width: 60%;
+                width: 80%;
                 margin-top: 45px;
             }
+        }
+        .swiper-button-prev {
+            display: none;
+        }
+        .swiper-button-next {
+            display: none;
         }
     }
 }
 
 /*-----------------------------------768px – 991px-----------------------------------*/
 @media (min-width: 768px) {
-    $scale: 1- ((1024 * 100)/992)/100;
+    $scale: calc(1 - ((1024 * 100) / 992) / 100);
     .container {
         max-width: 750px;
         padding: 0px 5px 0px 5px;
@@ -125,7 +131,7 @@
 
 /*-----------------------------------992px – 1119px-----------------------------------*/
 @media (min-width: 992px) {
-    $scale: 1- ((1024 * 100)/1200)/100;
+    $scale: calc(1 - ((1024 * 100) / 1200) / 100);
     .container {
         max-width: 950px;
     }
@@ -205,7 +211,7 @@
         }
     }
     .swiper {
-        margin: 150px 0px 170px 0px;
+        margin: 150px 0px 82px 0px;
         width: 947px;
         height: 422px;
         .swiper-slide {
@@ -215,17 +221,23 @@
                 margin: 0 auto;
             }
         }
+        .swiper-button-prev {
+            display: inline;
+        }
+        .swiper-button-next {
+            display: inline;
+        }
     }
 }
 
 /*----------------------------------->1200px-----------------------------------*/
 @media (min-width: 1200px) {
-    $scale: 1-calc(((1024 * 100) / 1200) / 100);
+    $scale: calc(1 - ((1024 * 100) / 1200) / 100);
     .container {
         max-width: 1200px;
     }
     .swiper {
-        margin: 150px 0px 170px 0px;
+        margin: 150px 0px 82px 0px;
         width: 947px;
         height: 422px;
         .swiper-slide {

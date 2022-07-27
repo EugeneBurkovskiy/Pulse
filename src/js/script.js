@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+    //swiper
+
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',
@@ -30,6 +33,7 @@ $(document).ready(function () {
             .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
     });
 
+    //catalog
 
     function toggleSlide(item) {
         $(item).each(function (i) {
@@ -43,5 +47,46 @@ $(document).ready(function () {
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+
+    // Modal
+
+    $('[data-modal=consultation]').on('click', function () {
+        $('.overlay,#consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function () {
+        $('.overlay,#consultation,#thanks,#order').fadeOut('slow');
+    });
+
+    $('.button_mini').each(function (i) {
+        $(this).on('click', function () {
+            $('#order .modal__description').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay,#order').fadeIn('slow');
+        })
+    });
+
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                // simple rule, converted to {required:true}
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Будь ласка введіть ваше ім'я",
+                phone: "Будь ласка введіть свій телефон",
+                email: {
+                    required: "Введіть свій email",
+                    email: "Невірно введена адреса email"
+                }
+            }
+        });
+    };
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
 
 });

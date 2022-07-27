@@ -19,4 +19,12 @@
             outline-color: #c70101;
         }
     }
+    .error {
+        border: 1px solid red;
+        padding-bottom: 15px;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+    }
 }

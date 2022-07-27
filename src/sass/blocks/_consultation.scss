@@ -7,4 +7,13 @@
         font-size: 20px;
         font-weight: 400;
     }
+    .error {
+        border: 1px solid red;
+        padding-bottom: 15px;
+    }
+    label.error {
+        border: none;
+        text-align: center;
+        color: #ffff;
+    }
 }

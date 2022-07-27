@@ -143,6 +143,21 @@
             padding-right: 30px;
         }
     }
+    .footer {
+        &__info {
+            width: 310px;
+        }
+    }
+    .modal {
+        width: 280px;
+        .feed-form {
+            width: 200px;
+        }
+        &__close {
+            right: 0px;
+            line-height: 41px;
+        }
+    }
 }
 
 /*-----------------------------------768px – 991px-----------------------------------*/
@@ -233,6 +248,11 @@
                 background-color: #c70101;
                 border: none;
             }
+        }
+    }
+    .footer {
+        &__info {
+            width: 460px;
         }
     }
 }

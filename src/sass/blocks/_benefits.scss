@@ -13,7 +13,7 @@
     &__row {
         display: flex;
         justify-content: space-between;
-        padding-bottom: 100px;
+        padding-bottom: 110px;
     }
 
     &__item {
@@ -36,6 +36,17 @@
         a {
             color: #ff0000;
             text-decoration: underline;
+        }
+    }
+    &__icon {
+        &_animation {
+            animation-name: heartbeat;
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
         }
     }
 }

@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="icon" href="icons/favicon-32x32.png" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie-edge">
@@ -12,7 +13,7 @@
 </head>
 
 <body>
-	<section class="promo">
+	<section id="up" class="promo">
 		<div class="container">
 			<header class="header">
 				<a href="#" class="header__logo"><img src="img/running-man-2-64.png" alt="logo"></a>
@@ -54,20 +55,23 @@
 		<div class="container">
 			<h2 class="benefits__title">Наші переваги</h2>
 			<div class="benefits__row">
-				<div class="benefits__item">
+				<div class="benefits__item animate__flipInX animate__animated wow " data-wow-duration="1s"
+					data-wow-delay="0s">
 					<img src="icons/cup.png" alt="cup">
 					<h3>Ділимось досвідом</h3>
 					Наші співробітники завжди готові поділитися своїм досвідом, оскільки самі бігають напівмарафони,
 					перепливли Босфор, готуються до змагань з тріатлону!
 				</div>
-				<div class="benefits__item">
-					<img src="icons/heart.png" alt="cup">
+				<div class="benefits__item animate__flipInX animate__animated wow " data-wow-duration="1.1s"
+					data-wow-delay="0s">
+					<img src="icons/heart.png" alt="heart" class="benefits__icon benefits__icon_animation">
 					<h3>Піклуємось про здоров'я</h3>
 					Ми працюємо для того, щоб Ваші заняття спортом йшли на користь Вашому здоров'ю та були на радість
 					Вам та Вашим близьким!
 				</div>
-				<div class="benefits__item">
-					<img src="icons/shoe.png" alt="cup">
+				<div class="benefits__item animate__flipInX animate__animated wow " data-wow-duration="1.2s"
+					data-wow-delay="0s">
+					<img src="icons/shoe.png" alt="shoe">
 					<h3>Вчимо бігати</h3>
 					Допомагаємо з навчанням правильній техніці бігу! Дружимо з найбільшою школою бігу в Україні-
 					<a href="#">I LOVE RUNNING.</a>
@@ -75,16 +79,17 @@
 			</div>
 		</div>
 	</section>
-	<section class="consultation">
+	<section class="consultation animate__slideInLeft animate__animated wow " data-wow-duration="1s"
+		data-wow-delay="0s">">
 		<div class="container">
-			<div div class="consultation__raw">
+			<div div class="consultation__raw ">
 				<h2 class="title title_left">Отримай безкоштовну консультацію <br> з підбору пульсометра</h2>
 				<div class="consultation__descr">
 					Просто заповни форму заявки <br> і ми передзвонимо вам протягом 10 хвилин
 				</div>
 				<form id="consultation-form" class="feed-form" action="#">
 					<input name="name" placeholder="Ваше ім'я" type="text">
-					<input name="phone" placeholder="Ваш телефон" type="tel">
+					<input name="phone" placeholder="Ваш телефон">
 					<input name="email" placeholder="Ваш E-mail" type="email">
 					<button class="button button_submit">Замовити консультацію</button>
 				</form>
@@ -120,8 +125,9 @@
 				</li>
 			</ul>
 
-			<div class="catalog__content catalog__content_active">
-				<div class="catalog-item">
+			<div class="catalog__content catalog__content_active ">
+				<div class="catalog-item animate__fadeInUpBig animate__animated wow " data-wow-duration="1s"
+					data-wow-delay="0.5s">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content_active">
 							<img src="img/photo.png" alt="" class="catalog-item__img">
@@ -149,7 +155,8 @@
 						<button class="button button_mini">Придбати</button>
 					</div>
 				</div>
-				<div class="catalog-item">
+				<div class="catalog-item animate__fadeInUpBig animate__animated wow " data-wow-duration="1.1s"
+					data-wow-delay="0.5s">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content_active">
 							<img src="img/photo.png" alt="" class="catalog-item__img">
@@ -177,7 +184,8 @@
 						<button class="button button_mini">Придбати</button>
 					</div>
 				</div>
-				<div class="catalog-item">
+				<div class="catalog-item animate__fadeInUpBig animate__animated wow " data-wow-duration="1.2s"
+					data-wow-delay="0.5s">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content_active">
 							<img src="img/photo.png" alt="" class="catalog-item__img">
@@ -205,7 +213,8 @@
 						<button class="button button_mini">Придбати</button>
 					</div>
 				</div>
-				<div class="catalog-item">
+				<div class="catalog-item animate__fadeInUpBig animate__animated wow " data-wow-duration="1.3s"
+					data-wow-delay="0.5s">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content_active">
 							<img src="img/photo.png" alt="" class="catalog-item__img">
@@ -233,7 +242,8 @@
 						<button class="button button_mini">Придбати</button>
 					</div>
 				</div>
-				<div class="catalog-item">
+				<div class="catalog-item animate__fadeInUpBig animate__animated wow " data-wow-duration="1.4s"
+					data-wow-delay="0.5s">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content_active">
 							<img src="img/photo.png" alt="" class="catalog-item__img">
@@ -261,7 +271,8 @@
 						<button class="button button_mini">Придбати</button>
 					</div>
 				</div>
-				<div class="catalog-item">
+				<div class="catalog-item animate__fadeInUpBig animate__animated wow " data-wow-duration="1.5s"
+					data-wow-delay="0.5s">
 					<div class="catalog-item__wrapper">
 						<div class="catalog-item__content catalog-item__content_active">
 							<img src="img/photo.png" alt="" class="catalog-item__img">
@@ -383,7 +394,8 @@
 	<section class="reviews">
 		<div class="container">
 			<h2 class="title">Відгуки клаєнтів</h2>
-			<div class="reviews__item">
+			<div class="reviews__item animate__animated wow animate__fadeInUp " data-wow-duration="1s"
+				data-wow-delay="0.5s">
 				<img src="img/photo_1.png" alt="">
 				<div class="reviews__body">
 					<div class="reviews__title">Катерина Сисидорченко</div>
@@ -393,7 +405,8 @@
 						некоторое время решила обновить гаджет - не раздумывая обратилась туда же.</div>
 				</div>
 			</div>
-			<div class="reviews__item">
+			<div class="reviews__item animate__animated wow animate__fadeInUp" data-wow-duration="1.1s"
+				data-wow-delay="0.5s">
 				<img src="img/photo_2.png" alt="">
 				<div class="reviews__body">
 					<div class="reviews__title">Юрій Юхименко</div>
@@ -404,7 +417,8 @@
 						тренировок на месяц вперёд.С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
 				</div>
 			</div>
-			<div class="reviews__item">
+			<div class="reviews__item animate__animated wow animate__fadeInUp" data-wow-duration="1.2s"
+				data-wow-delay="0.5s">
 				<img src="img/photo_3.png" alt="">
 				<div class="reviews__body">
 					<div class="reviews__title">Анжеліка Гуліда</div>
@@ -447,7 +461,7 @@
 			<div class="modal__description">і ми зателефонуємо вам протягом 10 хвилин</div>
 			<form class="feed-form" action="#">
 				<input name="name" placeholder="Ваше ім'я" type="text">
-				<input name="phone" placeholder="Ваш телефон" type="tel">
+				<input name="phone" placeholder="Ваш телефон">
 				<input name="email" placeholder="Ваш E-mail" type="email">
 				<button class="button button_submit">Замовити консультацію</button>
 			</form>
@@ -459,7 +473,7 @@
 			<div class="modal__description">Пульсометр</div>
 			<form class="feed-form" action="#">
 				<input name="name" placeholder="Ваше ім'я" type="text">
-				<input name="phone" placeholder="Ваш телефон" type="tel">
+				<input name="phone" placeholder="Ваш телефон">
 				<input name="email" placeholder="Ваш E-mail" type="email">
 				<button class="button button_submit">Придбати</button>
 			</form>
@@ -471,9 +485,13 @@
 		</div>
 	</div>
 
+	<a href="#up" class="pageup"><img src="icons/arrow-up-svgrepo-com.svg" alt="up"></a>
+
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/script.js"></script>
 
 </body>

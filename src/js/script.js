@@ -89,4 +89,25 @@ $(document).ready(function () {
     validateForms('#consultation form');
     validateForms('#order form');
 
+    //mask
+    $('input[name=phone]').mask("+38 (099) 999-99-99");
+
+    //pageup amd smooth scroll
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href^='#']").click(function () {
+        var _href = $(this).attr("href");
+        $("html,body").animate({ scrollTop: $(_href).offset().top + "px" });
+        return false;
+    });
+
+    new WOW().init();
+
 });

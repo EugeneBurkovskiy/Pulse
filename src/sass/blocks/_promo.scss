@@ -47,6 +47,10 @@
             color: #fff;
             text-transform: uppercase;
             text-decoration: underline;
+            transition: 0.5s all;
+            &:hover {
+                color: #c70101;
+            }
         }
     }
 }

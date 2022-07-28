@@ -82,6 +82,10 @@
             width: 33%;
             margin: 0 auto;
             text-decoration: underline;
+            transition: 0.5s all;
+            &:hover {
+                color: #0d0d0d;
+            }
         }
         &__band {
             width: 260px;
@@ -158,6 +162,10 @@
             font-weight: 500;
             text-decoration: underline;
             text-transform: uppercase;
+            transition: 0.5s all;
+            &:hover {
+                color: #0d0d0d;
+            }
         }
     }
 }

@@ -22,5 +22,8 @@
     "defaults",
     "not IE 11",
     "maintained node versions"
-  ]
+  ],
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }

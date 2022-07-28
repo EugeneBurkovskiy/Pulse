@@ -26,6 +26,10 @@
         font-weight: 700;
         font-size: 18px;
         color: #ffffff;
+        transition: 0.5s all;
+        &:hover {
+            color: #0d0d0d;
+        }
     }
     &__contacts {
         display: flex;
